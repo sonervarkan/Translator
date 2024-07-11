@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="head">
+                <div class="left">
+                    <div class="volume"><i id="from" class="fa-solid fa-volume-off"></i></div>
+                    <select class="fromLang">
+                        <!--<option value="tr-TR">Turkish</option>-->
+                    </select>
+                </div>
+
+                <div class="exchange"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                
+                <div class="right">
+                    <div class="volume"><i id="to" class="fa-solid fa-volume-off"></i></div>
+                    <select class="toLang"></select>
+                </div>
+            </div>
+            
+            <div class="text">
+                <textarea class="fromText" placeholder="Enter here the words"></textarea>
+                <textarea class="toText" placeholder="Translate it" readonly></textarea>
+            </div>
+        </div>
+        
+        <div class="translate"><button type="button">Translate</button></div>
+    </div>
+
+      
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
